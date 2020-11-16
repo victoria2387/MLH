@@ -37,5 +37,9 @@ describe('Inputs', function () {
             const placeholder = $(sel.name).getAttribute('placeholder');
             expect(placeholder).toEqual(exp.placeholderName);
         });
+        it('TC-032 Placeholder Age is correct', function () {
+            const placeholder = $(sel.age).getAttribute('placeholder');
+            expect(placeholder).toEqual(exp.placeholderAge);
+        });
     });
 });
